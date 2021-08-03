@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".smartdoctor.fragments.Pacient_JurnalulMeuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/jurnalulMeu"
+        android:text="Profilul meu"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:gravity="center"
+        android:textColor="@color/colorFont1"
+        android:elevation="50dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/textsize_xlarge" />
+
+    <Space
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:text="@string/tipDiabetului"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="@dimen/textsize_medium" />
+
+        <TextView
+        android:id="@+id/tipDiabet"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+            android:textStyle="bold"
+        android:textColor="@color/colorFont1"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_medium" />
+
+    <Space
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:text="@string/tipTerapie"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="@dimen/textsize_medium" />
+
+
+        <TextView
+        android:id="@+id/terapieDiabet"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorFont1"
+        android:textSize="@dimen/textsize_medium" />
+
+    <Space
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:text="@string/tipMedicamente"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="@dimen/textsize_medium" />
+
+        <TextView
+        android:id="@+id/medicamente"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorFont1"
+        android:textSize="@dimen/textsize_medium" />
+
+    <Space
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:text="@string/glucometru"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="@dimen/textsize_medium" />
+
+
+        <TextView
+        android:id="@+id/glucometru"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorFont1"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_medium" />
+
+    <Space
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:text="@string/senzor"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="@dimen/textsize_medium" />
+
+        <TextView
+        android:id="@+id/senzor"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorFont1"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_medium" />
+
+    <Space
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:text="@string/alergiii"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="@dimen/textsize_medium" />
+
+        <TextView
+        android:id="@+id/alergii"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorFont1"
+        android:textSize="@dimen/textsize_medium" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

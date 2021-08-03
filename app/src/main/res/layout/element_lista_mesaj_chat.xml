@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/elementListaMesajChatLayoutMare"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="end">
+
+    <LinearLayout
+        android:id="@+id/elementListaMesajChatLayoutMic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corners">
+
+        <TextView
+            android:id="@+id/elementListaMesajDataOra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="10/10/2006 10:30:01"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/elementListaMesajExpeditorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="marius@gmail.com"
+            android:textStyle="italic"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_xsmall"
+            android:layout_height="@dimen/spacing_xsmall" />
+
+        <TextView
+            android:id="@+id/elementListaMesajMesaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_medium"
+            android:maxWidth="200dp"
+            android:text="Bla bla bla"/>
+    </LinearLayout>
+
+</LinearLayout>

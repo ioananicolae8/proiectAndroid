@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityMenuDoctor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".smartdoctor.activities.Doctor_MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="@dimen/spacing_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/navigationViewToggleButton"
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_menu" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_normal"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nume" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_small"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/toolbarWindowIcon"
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+        </Toolbar>
+
+        <FrameLayout
+            android:id="@+id/menuFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header_doctor"
+        app:menu="@menu/navigation_menu_doctor">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

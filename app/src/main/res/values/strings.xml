@@ -1,0 +1,119 @@
+<resources>
+    <!--    Drawer-->
+    <string name="drawer_open">open/</string>
+    <string name="drawer_close">close</string>
+    <string name="yes">Da</string>
+    <string name="no">Nu</string>
+
+    <string name="avatars_directory">Poza_de_profil/</string>
+    <string name="app_name">Smart Doctor</string>
+    <string name="Alege_o_poza_de_profil">Alege o poza de profil</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Parola</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_age">Varsta</string>
+    <string name="prompt_numar_telefon">Numar telefon</string>
+    <string name="prompt_CNP">CNP</string>
+    <string name="prompt_nume">Nume</string>
+    <string name="prompt_prenume">Prenume</string>
+    <string name="prompt_adresa">Adresa</string>
+    <string name="prompt_data_nastere">Data nastere</string>
+    <string name="prompt_gen_m">Masculin</string>
+    <string name="prompt_gen_f">Feminin</string>
+    <string name="prompt_gen">Gen</string>
+    <string name="alergii">Alergii detectate</string>
+    <string name="default_avatar_path">avatars/icon_avatar.png</string>
+    <string name="action_register">Înregistrare</string>
+    <string name="error_field_required">Acest câmp este obligatoriu!</string>
+    <string name="error_invalid_username">Acest câmp conține caractere speciale!</string>
+    <string name="error_invalid_age">Vârsta minimă este de 8 ani și maximă de 90!</string>
+    <string name="error_invalid_password">Parola trebuie să conțină minim 6 caractere!</string>
+    <string name="error_invalid_phone">Numărul trebuie să conțină 10 cifre!</string>
+    <string name="error_invalid_cnp">CNP-ul trebuie să conțină 13 cifre!</string>
+    <string name="error_invalid_nume">Numele nu poate conține caractere speciale!</string>
+    <string name="error_invalid_prenume">Prenumele nu poate conține caractere speciale!</string>
+    <string name="error_invalid_email">Această adresă este invalidă!</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="forgot_password">Ai uitat parola?</string>
+    <string name="login_do_not_have_account">Nu ai un cont? Înregistrează-te aici!</string>
+    <string name="action_sign_in_short">Vezi parola!</string>
+    <string name="text_loading">Se încarcă</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="reset_password_button">Reseteaza parola aici</string>
+    <string name="reset_password_success">Parola resetata! Verifica adresa de email!</string>
+    <string name="reset_password_failure">Nu este niciun cont inregistrat cu aceasta adresa de email!</string>
+    <string name="login_access_denied">Acest cont nu exista!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mesaj_logout">Vrei să te deloghezi?</string>
+    <string name="mesaj_logout_extra">Această acțiune te va trimite la ecranul de logare.</string>
+    <string name="error_invalid_data_nastere">Data nașterii trebuie să fie validă!</string>
+    <string name="alege_camera">Fă o poză</string>
+    <string name="alege_galerie">Alege o poză din galerie</string>
+    <string name="dialog_photo_selection">Dorești o poză de profil?</string>
+    <string name="choice_camera">Fă o poză cu camera.</string>
+    <string name="error_file_creation">S-a produs o eroare în procesul de încărcare!</string>
+    <string name="error_image_creation">Eroare la încărcarea pozei!</string>
+    <string name="login_access_granted">Bine ai venit!</string>
+    <string name="gen_masculin">Masculin</string>
+    <string name="gen_feminin">Feminin</string>
+    <string name="error_upload_failed">Încărcare nereușită!</string>
+    <string name="register_access_denied">Acest mail există deja!</string>
+    <string name="tip_glucometru">Tipul glucometrului pe care Îl folosiți</string>
+    <string name="tip_senzor">Tipul senzorului de glicemie</string>
+    <string name="textInceput">"Acesta este primul jurnal din aplicație. Aceste date le veți introduce o singură dată și vor fi salvate în aplicația dumneavoastră. "</string>
+    <string name="pacient">Pacient</string>
+    <string name="doctor">DOCTOR</string>
+    <string name="action_jurnalul_meu">Jurnalul meu</string>
+    <string name="action_istoric">Istoric</string>
+    <string name="action_despre_diabet">Despre diabet</string>
+    <string name="textInceputFormular2">Jurnalul zilei</string>
+    <string name="dimineata">Dimineața</string>
+    <string name="pranz">Prânz</string>
+    <string name="seara">Seara</string>
+    <string name="noaptea">Noaptea</string>
+    <string name="textIstoric">Selectați momentul zilei la care vreți să adăugați notițe în jurnal!</string>
+    <string name="istoric">JURNAL</string>
+    <string name="tipDiabetului">Tipul diabetului de care sufăr:</string>
+    <string name="tipTerapie">Terapia de care dispun:</string>
+    <string name="tipMedicamente">Am prescrise și alte medicamente:</string>
+    <string name="glucometru">Glucometrul pe care îl folosesc:</string>
+    <string name="senzor">Senzorul pe care îl folosesc:</string>
+    <string name="alergiii">În cazul în care am alergii, acestea sunt:</string>
+    <string name="textInceputNotite">Adăugați notițele dumneavoastră aici!</string>
+    <string name="action_seteaza_reminder">Setează reminder</string>
+    <string name="Notite">Notițe suplimentare</string>
+    <string name="text1">Diabetul este subdivizat, în general, în două tipuri: diabet insulino-dependent (tip I) și diabet insulino-independent (tip II). Diferența dintre cele două este că, în cazul diabetului de tip I, oamenii sunt afectați de la naștere sau din adolescență și necesită injecții cu insulină toată viața, pacientul fiind incapabil să producă hormonul pancreasului, iar în cazul diabetului de tip II, oamenii dezvoltă afecțiunea în general după vârsta de 40 ani.
+Conform ”Centers for disease control and prevention” , tipul II este cea mai des întâlnită formă și este regăsită în peste 90% din cazuri, pacienții fiind adeseori supraponderali. Regimul alimentar joacă un rol extrem de important în tratarea diabetului de tip II, scăderea în greutate și scăderea numărului de calorii fiind o bună soluție pentru a diminua cantitatea de glucoză din sânge.
+Ambele tipuri de diabet se pot moșteni în familie, dar diabetul de tip I este considerat o boală autoimună. Bolile autoimune  percep în mod eronat rolul celulelor sistemului imunitar, care produc anticorpi ce atacă propriile părți bune ale organismului. În cazul diabetului zaharat de tip I, organul afectat este pancreasul, deoarece insulele de celule din acest organ sunt considerate ”străine”.
+Prediabetul  se manifestă în general la persoane cu obezitate, intervalul de vârstă depășind 40 de ani, iar diagnosticul de prediabet se pune în urma analizelor uzuale efectuate de către pacient, unde sunt remarcate valori crescute ale trigliceridelor și colesterolului. Diagnosticul de prediabet se pune în momentul în care valorile glicemiei sunt mai mari decât cele obișnuite întâlnite la omul respectiv, dar nu suficient de mari astfel încât să capete valori ce indică diabetul zaharat (glicemie>126 mg/dl).
+Conform Dr. Daniela Petrache, LADA  se manifestă la pacienții cu vârsta peste 35 ani și este destul de asemănător cu diabetul zaharat de tip II, din cauza apariției sale la o vârstă adultă. Caracteristicile sale principale sunt reprezentate de insulinodependența secundară și autoanticorpii ce sunt prezenți în ser. Dacă această boală debutează la vârsta de 50 ani, există în familie cazuri de boli autoimune sau personal, bolnavul are o boală autoimună și indicele de masă corporală este sub 25 kg/m2 se identifică acest tip de diabet cu o specificitate de 71%.
+Conform American Diabetes Association , diabetul gestațional sau de sarcină, așa cum spune și numele, apare în timpul sarcinii și dispare în momentul în care mama dă naștere fătului. Principalii factori de risc sunt: vârsta peste 25 ani, greutatea în cazul în care mama este supraponderală, moștenirea etnică și istoricul medical.
+</string>
+    <string name="text2">În ambele tipuri de diabet, factorii genetici sunt principalele cauze pentru dobândirea acestei complicații. La apariția diabetului de tip II, s-a demonstrat că în afară de factorii genetici, sunt implicate, de asemenea, tulburările metabolice și obezitatea. Numeroase studii arată că obezitatea este una dintre cele mai periculoase cauze, deoarece nu doar că favorizează dezvoltarea diabetului, ci și promovează evoluția bolilor de inimă.
+Printre simptomele diabetului se află setea excesivă, scăderea în greutate, vindecare lentă a tăieturilor și rănilor, infecții recidivante, vedere tulbure, senzații de furnicături în mâini și picioare. Diabetul poate fi însoțit de complicații pe termen lung, ceea ce îl face pe bolnav să fie extrem de atent asupra schimbărilor zilnice ale glicemiei. Printre aceste complicații se numără și: afecțiuni renale, leziuni ale nervilor, îngustarea vaselor de sânge, boala ochiului diabetic, piciorul diabetic.
+Diabetul zaharat afectează rinichii, deoarece rinichii sunt organe care filtrează sângele, iar prea mult zahăr în sânge pe perioade lungi de timp poate duce la deteriorarea acestor ”filtre”, lucru ce poate determina acumularea de deșeuri în organism. Mulți oameni nu cunosc faptul că suferă de boli renale diabetice, singura modalitate de a afla acest lucru fiind testarea funției renale în fiecare an. În cazul diabetului zaharat de tip I, boala renală diabetică este prezentă la 20-40% din bolnavi.
+Picioarele sunt afectate din cauza diabetului zaharat, atunci când valorile glicemiei sunt ridicate pentru o lungă perioadă de timp, ducând la leziuni ale nervilor. În momentul în care nervii sunt afectați, durerea, frigul, căldura sau leziunile nu se fac simțite.
+Ochiul este afectat de diabet din cauza valorilor ridicate ale glicemiei și/sau hipertensiune arterială, care ajung să deterioreze vasele mici de sânge din spatele ochiului, cunoscute sub numele de retină, provocând boala ochiului diabetic. Retinopatia diabetică este foarte frecventă la adulții cu vârsta cuprinsă între 20-75 ani, majoritatea bolnavilor cu DZ de tip 1 manifestând această afecțiune și mai mult de 60% din cei cu DZ de tip 2 sunt diagnostigați, aproximativ 20% fiind descoperiți cu retinopatie la momentul diagnosticului de diabet.
+Nervii pot fi afectați de-a lungul timpului din cauza glicemiei, termenul medical folosit pentru aceasta afecțiune este ”neuropatia debetică”. Printre simptomele neuropatiei se enumeră amorțeli/furnicături, durere la nivelul degetelor de la picioare, mâinilor, brațelor sau degetelor, atrofie musculară la nivelul picioarelor și mâinilor, arsuri sau străfulgerări de durere, senzație de slăbiciune și oboseală, stări de amețeală sau leșin, pierderea capacității de detectare a modificărilor de temperatură. În jur de 60-70% din pacienții diagnosticați au forme medii sau severe de neuropatie.
+</string>
+    <string name="text3">Scopul final al controlului diabetului este de a verifica simptomele și de a menține glucoza din sânge la niveluri normale. Regimul alimentar în combinație cu injecțiile cu insulină permit menținerea nivelului insulinei din corp sa se apropie de valorile normale ale unui non-diabetic. Cel mai întâlnit tratament este cel cu dispozitivul ce conține cartușe de insulină și măsoară doza injectată, numit și Novopen. Pacienții diagnosticați cu diabet zaharat trebuie să țină cont și să acorde o importanță foarte mare alimentației și stilului de viață adoptat. În esență, dieta unui diabetic trebuie să: conțină alimente bogate în fibre, nu conțină glucide simple, nu conțină mai mult de 30% grăsimi, conțină 20% proteine, furnizeze peste 50% din valoarea calorică din carbohidrați complecși.
+De curând, cercetătorii din California au recomndat bolnavilor de diabet de tip II să ia în fiecare zi 500 mg de vitamina E, cu scopul de a combate nivelul ridicat de radicali liberi asociat cu diabetul și de a regla nivelul zahărului din sânge, îmbunătățind acțiunea insulinei. Într-un studiu realizat la Universitatea Georgetown, cercetătorii au urmărit timp de 3 luni 11 persoane bolnave de diabet tip II. Șapte dintre ele au fost îndrumate să urmeze un regim vegetarian care consta în fructe, legume, cereale, fără grăsime, celelalte patru persoane urmând o dietă din alimente vegetale, pui și pește. Valorile glicemiei a vegetarienilor a scăzut cu 59% și au slăbit în medie 7 kg, având nevoie de mai puțină insulină, față de nonvegetarieni, care au slăbit 4 kg.
+	Potrivit ”Tratatului de Diabet Păulescu”,  tratamentul pe cale medicamentoasă constă în monoterapie, care se instituie la descoperirea recentă a bolii sau la pacienții cu un stil de viață sănătos, și terapie orală combinată, instituită în lipsa unui echilibru metabolic. Monoterapia se face prin metformin, sulfonilureice, glinide, inhibatori de alfa glicozidază, tiazolidindione și insulină.
+</string>
+    <string name="text4">Într-un studiu  realizat în 2019 de către Institutul Național de Statistică, se arată că cele mai întâlnite boli în rândul populației din România cu vârsta mai mare de 15 ani sunt: hipertensiunea arterială (întâlnită la 159 persoane din 1000), afecţiunile zonei lombare (78 persoane din 1000), diabetul zaharat (50 persoane din 1000) și afecţiunile zonei cervicale (36 persoane din 1000).
+Diabetul fiind o boală ce necesită o atenție deosebită pe parcursul mai multor ani sau chiar toată viața, continuu se lucrează la realizarea unor statistici, astfel că la finalul studiului s-a ajuns la concluzia că 60 femei din din 1000 și 40 bărbați din 1000 sunt diagnosticați cu diabet. De asemenea, s-au realizat analize și pe mediile de proveniență ale oamenilor. Din eșantionul de 1000 persoane pentru fiecare mediu, s-a constatat că mediul urban este în continuă creștere la numărul bolnavilor de diabet, cu 55 de persoane din 1000, față de cel rural, unde 44 din 1000 au probleme legate de secreția insulinei.
+</string>
+    <string name="notite">Notițe zilnice</string>
+    <string name="btn_time">Ora</string>
+    <string name="txtv_time">Selectează ora și minutele</string>
+    <string name="btn_date">Data</string>
+    <string name="txtv_date">Setează data</string>
+    <string name="txtv_titlu">Scurt Reminder</string>
+    <string name="txtv_notes">Adaugă detalii</string>
+    <string name="action_chat">Chat</string>
+    <string name="prompt_specializare">Specializare</string>
+    <string name="prompt_experienta">Experienta</string>
+    <string name="textprogramari">Programări zilnice</string>
+    <string name="programari">Adaugă o programare nouă</string>
+</resources>

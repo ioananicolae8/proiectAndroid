@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".smartdoctor.activities.Doctor_RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_avatar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Alege_o_poza_de_profil"
+        android:textColor="@color/textColorInchis"/>
+
+    <Space
+        android:layout_width="@dimen/spacing_small"
+        android:layout_height="@dimen/spacing_small" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp" >
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center_horizontal"
+            android:isScrollContainer="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_email" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/viewEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="hint" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_parola" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:imeActionId="6"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_username" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_username"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_varsta" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_age"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_phone" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_numar_telefon"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_nume" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewNume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_nume"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_prenume" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewPrenume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_prenume"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_specializare" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewSpecializare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_specializare"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_cnp" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/viewExperienta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_experienta"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/info_icon_side_length"
+                    android:layout_height="@dimen/info_icon_side_length"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_gen" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <RadioGroup
+                    android:id="@+id/viewGen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prompt_gen"
+                        android:textSize="@dimen/textsize_medium"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prompt_gen_m" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prompt_gen_f" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Space
+        android:layout_width="@dimen/spacing_xxsmall"
+        android:layout_height="@dimen/spacing_xxsmall" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        style="?android:textAppearanceSmall"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/action_register"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <Space
+        android:layout_width="@dimen/spacing_xsmall"
+        android:layout_height="@dimen/spacing_xsmall" />
+
+    <ProgressBar
+        android:id="@+id/registerProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>

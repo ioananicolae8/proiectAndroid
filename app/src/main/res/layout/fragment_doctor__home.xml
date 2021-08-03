@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".smartdoctor.fragments.Doctor_HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/menuFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="50dp"
+            android:fontFamily="@font/exo2_bold_italic"
+            android:text="@string/programari"
+            android:textColor="@color/colorFont1"
+            android:textSize="@dimen/spacing_large" />
+
+        <Space
+            android:layout_width="@dimen/spacing_normal"
+            android:layout_height="@dimen/spacing_normal" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:background="@android:drawable/dialog_holo_light_frame">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:elevation="50dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/prog_nume" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Numele pacientului:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etNume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/prog_prenume" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prenume:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etPrenume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/prog_nrtelefon" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telefon:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etTelefon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/prog_email" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/prog_ora" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ora:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <TimePicker
+                    android:id="@+id/tpOra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/prog_data" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <DatePicker
+                    android:id="@+id/dpData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:datePickerMode="calendar" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|start">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/prog_detalii" />
+
+                        <Space
+                            android:layout_width="@dimen/spacing_normal"
+                            android:layout_height="@dimen/spacing_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Detalii:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/spacing_normal"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etDetalii"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/spacing_small" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <Space
+            android:layout_width="@dimen/spacing_normal"
+            android:layout_height="@dimen/spacing_normal" />
+
+        <Button
+            android:id="@+id/btSalveaza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="50dp"
+            android:fontFamily="@font/exo2_bold"
+            android:gravity="center"
+            android:hint="Salvează!"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+</FrameLayout>

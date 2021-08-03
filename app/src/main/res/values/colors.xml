@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="textColorInchis">#1B4332</color>
+
+    <color name="backgroundInceput">#ebf0f0</color>
+    <color name="backGroundSfarsit">#a2e8eb</color>
+
+    <color name="backgroundInceput1">#f6fff8</color>
+    <color name="backGroundSfarsit1">#eaf4f4</color>
+    <color name="colorFont1">#067a7a</color>
+
+    <color name="white">#f6fff8</color>
+
+</resources>

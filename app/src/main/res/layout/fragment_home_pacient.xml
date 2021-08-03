@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".smartdoctor.fragments.Pacient_HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notite"
+            android:textSize="@dimen/spacing_large"
+            android:fontFamily="@font/exo2_bold_italic"
+            android:textColor="@color/colorFont1"
+            android:elevation="50dp"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_simplu"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_normal"
+            android:layout_height="@dimen/spacing_normal"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="@string/textIstoric"
+            android:textAlignment="center"
+            android:textColor="@color/colorFont1"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"/>
+
+        <Button
+            android:id="@+id/btDimineata"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="50dp"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/dimineata"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spacing_normal"
+            />
+
+        <Space
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"/>
+
+        <Button
+            android:id="@+id/btPranz"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="50dp"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/pranz"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spacing_normal"
+            />
+
+        <Space
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"/>
+
+        <Button
+            android:id="@+id/btSeara"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="50dp"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/seara"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spacing_normal"
+            />
+
+        <Space
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"/>
+
+        <Button
+            android:id="@+id/btNoaptea"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="50dp"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/noaptea"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spacing_normal"
+            />
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

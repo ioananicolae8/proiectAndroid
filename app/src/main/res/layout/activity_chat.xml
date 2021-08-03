@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".smartdoctor.activities.ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:gravity="start|center"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/ivChatAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_avatar"/>
+
+            <Space
+                android:layout_width="@dimen/spacing_xlarge"
+                android:layout_height="@dimen/spacing_xlarge" />
+
+            <TextView
+                android:id="@+id/tvChatDetalii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_xlarge"
+                android:textStyle="bold"
+                android:text="..."/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragmentChatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="70dp"/>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true">
+
+            <EditText
+                android:id="@+id/fragmentChatMesajEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="60dp"/>
+
+            <Button
+                android:id="@+id/fragmentChatTrimitereButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_trimtere_mesaj"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

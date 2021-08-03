@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".smartdoctor.activities.Pacient_Formular1Activity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="@dimen/spacing_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_normal"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nume" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_small"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/menuFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:elevation="70dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_xsmall"
+            android:paddingTop="@dimen/spacing_normal"
+            android:paddingRight="@dimen/spacing_xsmall"
+            android:paddingBottom="@dimen/spacing_normal"
+            android:text="@string/textInceputNotite"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Space
+            android:layout_width="@dimen/spacing_normal"
+            android:layout_height="@dimen/spacing_normal" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:background="@android:drawable/dialog_holo_light_frame">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:elevation="50dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_glicemie" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Glicemie (mg/dl):"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etGlicemie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_carbohidrati" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carbohodrați (g):"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etCarbohidrati"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_sistola" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sistola:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etSistola"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_diastola" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diastola:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etDiastola"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_greutate" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Greutate corporală (kg):"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etGreutate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_miscare" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activitate fizică (min):"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etActivitate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|start">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/icon_medicamente" />
+
+                        <Space
+                            android:layout_width="@dimen/spacing_normal"
+                            android:layout_height="@dimen/spacing_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medicamente:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/spacing_normal"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etMedicamente"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:gravity="left"
+                            android:inputType="textMultiLine"
+                            android:textSize="@dimen/spacing_small"
+                            android:hint="Aspacardin, Paracetamol etc." />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|start">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/icon_mancare" />
+
+                        <Space
+                            android:layout_width="@dimen/spacing_normal"
+                            android:layout_height="@dimen/spacing_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Masa consumată:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/spacing_normal"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etMasa"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:inputType="textMultiLine"
+                            android:gravity="left"
+                            android:textSize="@dimen/spacing_small" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_stare_generala" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stare generală:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                    <Spinner
+                        android:id="@+id/spStare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_notes" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <EditText
+                        android:id="@+id/etNotite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Notite"
+                        android:inputType="textMultiLine"
+                        android:textSize="@dimen/spacing_small" />
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="@dimen/spacing_normal"
+                            android:layout_height="@dimen/spacing_normal" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:text="Apăsați pe microfon pentru a porni și opri înregistrarea"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/spacing_small"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageVocal"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon_microfon" />
+
+                        <Space
+                            android:layout_width="@dimen/spacing_normal"
+                            android:layout_height="@dimen/spacing_small"/>
+
+                        <Chronometer
+                            android:id="@+id/chTimp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/spacing_normal" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Space
+            android:layout_width="@dimen/spacing_normal"
+            android:layout_height="@dimen/spacing_normal" />
+
+        <Button
+            android:id="@+id/btnFormular2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/exo2_bold"
+            android:gravity="center"
+            android:hint="Salvează!"
+            android:elevation="50dp"
+            android:textColorHint="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

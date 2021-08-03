@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".smartdoctor.activities.Pacient_Formular1Activity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="@dimen/spacing_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_normal"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nume" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_small"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/menuFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="70dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_xsmall"
+            android:paddingTop="@dimen/spacing_normal"
+            android:paddingRight="@dimen/spacing_xsmall"
+            android:paddingBottom="@dimen/spacing_normal"
+            android:text="@string/textInceput"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Space
+            android:layout_width="@dimen/spacing_normal"
+            android:layout_height="@dimen/spacing_xlarge" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="50dp"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_tipul_diabetului" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipul diabetului:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <Spinner
+                    android:id="@+id/spTipDiabet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_terapia_de_diabet" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terapia de diabet:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <Spinner
+                    android:id="@+id/spTerapieDiabet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_medicamente" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medicamente:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <Spinner
+                    android:id="@+id/spMedicamente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_tipul_glucometrului" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipul glucometrului pe care îl folosiți:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_small"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spGlucometru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_tipul_glucometrului" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipul senzorului pe care îl folosiți:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_small"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spSenzor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_alergii" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <EditText
+                    android:id="@+id/etAlergii"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/alergii"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <Button
+                android:id="@+id/btnFormular1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="@font/exo2_bold"
+                android:gravity="center"
+                android:hint="Salvează!"
+                android:textColorHint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

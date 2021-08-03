@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".smartdoctor.activities.Pacient_VizualizareIstoric">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_glicemie" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Glicemie:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvGlicemie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_carbohidrati" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carbohodrați:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvCarbohidrati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_sistola" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sistola:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvSistola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_diastola" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diastola:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvDiastola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_greutate" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Greutate corporală:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvGreutate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_miscare" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activitate fizică:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvActivitate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_medicamente" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medicamente:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvMedicamente"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="start"
+                        android:textSize="@dimen/spacing_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_mancare" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masa consumată:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/spacing_normal"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvMasa"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:gravity="start"
+                        android:textSize="@dimen/spacing_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_stare_generala" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stare generală:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_normal"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvStare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_notes" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_normal"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+                    android:id="@+id/tvNotite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/spacing_small" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/spacing_small"
+                android:layout_height="@dimen/spacing_small" />
+
+            <LinearLayout
+                android:id="@+id/layoutInregistrareVizualizareIstoric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apăsați mai jos pentru a reda înregistrarea"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/spacing_small" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_small"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageVizualizareIstoric"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_play" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_normal"
+                        android:layout_height="@dimen/spacing_small" />
+
+                    <Chronometer
+                        android:id="@+id/chVizualizareIstoric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

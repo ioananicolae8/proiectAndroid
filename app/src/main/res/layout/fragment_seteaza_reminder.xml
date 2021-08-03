@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".smartdoctor.fragments.SeteazaReminderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtv_titlu"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/spacing_large"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:id="@+id/txtv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtv_time" />
+
+        <Space
+            android:layout_width="@dimen/spacing_small"
+            android:layout_height="@dimen/spacing_small"/>
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/btn_time"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_small"
+            android:layout_height="@dimen/spacing_small"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtv_notes" />
+
+        <EditText
+            android:id="@+id/et_notite"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textMultiLine"/>
+
+        <Space
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_xlarge"/>
+
+        <Button
+            android:id="@+id/btn_alarm"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Setează alarmă!"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</FrameLayout>

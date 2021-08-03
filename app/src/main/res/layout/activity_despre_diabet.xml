@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".smartdoctor.activities.DespreDiabetActivity">
+
+    <Space
+        android:layout_width="@dimen/spacing_small"
+        android:layout_height="@dimen/spacing_small" />
+
+    <ImageView
+        android:id="@+id/despreDiabetImage"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:elevation="50dp" />
+
+    <Space
+        android:layout_width="@dimen/spacing_small"
+        android:layout_height="@dimen/spacing_small" />
+
+    <TextView
+        android:id="@+id/despreDiabetTitlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="70dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/exo2_bold"
+        android:textColor="@color/colorFont1"
+        android:textSize="@dimen/spacing_large">
+    </TextView>
+
+    <Space
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <TextView
+            android:id="@+id/despreDiabetContent"
+            android:layout_width="350dp"
+            android:layout_height="500dp"
+            android:elevation="70dp"
+            android:fontFamily="@font/exo2_regular"
+            android:padding="@dimen/spacing_small"
+            android:textAlignment="inherit"
+            android:textColor="@color/textColorInchis"
+            android:textSize="@dimen/spacing_normal">
+
+        </TextView>
+
+    </ScrollView>
+
+</LinearLayout>

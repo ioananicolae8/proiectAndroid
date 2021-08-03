@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".smartdoctor.activities.Doctor_LogInActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/logo_name" />
+
+    <Space
+        android:layout_width="@dimen/spacing_normal"
+        android:layout_height="@dimen/spacing_normal" />
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small">
+
+            <ImageView
+                android:layout_width="@dimen/info_icon_side_length"
+                android:layout_height="@dimen/info_icon_side_length"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_email" />
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/viewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="@dimen/spacing_small"
+            android:layout_height="@dimen/spacing_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small">
+
+            <ImageView
+                android:layout_width="@dimen/info_icon_side_length"
+                android:layout_height="@dimen/info_icon_side_length"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_parola" />
+
+            <Space
+                android:layout_width="@dimen/spacing_normal"
+                android:layout_height="@dimen/spacing_normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/viewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="@dimen/spacing_small"
+        android:layout_height="@dimen/spacing_small" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sign_in"
+        android:textStyle="bold"
+        android:background="@drawable/button_ripple_effect_rounded_corners"/>
+
+    <Space
+        android:layout_width="@dimen/spacing_xsmall"
+        android:layout_height="@dimen/spacing_xsmall" />
+
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible" />
+
+    <Space
+        android:layout_width="@dimen/spacing_xsmall"
+        android:layout_height="@dimen/spacing_xsmall" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/forgot_password" />
+
+    <Space
+        android:layout_width="@dimen/spacing_xsmall"
+        android:layout_height="@dimen/spacing_xsmall" />
+
+    <TextView
+        android:id="@+id/goToRegistrationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/login_do_not_have_account"
+        android:clickable="true"/>
+
+
+</LinearLayout>

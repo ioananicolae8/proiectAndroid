@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/actionHome"
+        android:icon="@drawable/icon_notite"
+        android:title="Notițe zilnice">
+    </item>
+
+    <item android:id="@+id/actionIstoric"
+        android:icon="@drawable/icon_istoric"
+        android:title="@string/action_istoric">
+    </item>
+
+    <item android:id="@+id/actionJurnalulMeu"
+        android:icon="@drawable/icon_jurnalul_meu"
+        android:title="@string/action_jurnalul_meu">
+    </item>
+
+
+    <item android:id="@+id/actionDespreDiabet"
+        android:icon="@drawable/icon_despre_diabet"
+        android:title="@string/action_despre_diabet">
+    </item>
+
+    <item android:id="@+id/actionSeteazaReminder"
+        android:icon="@drawable/icon_reminder"
+        android:title="@string/action_seteaza_reminder">
+    </item>
+
+    <item android:id="@+id/actionChat"
+        android:icon="@drawable/icon_chat"
+        android:title="@string/action_chat">
+    </item>
+
+    <item android:id="@+id/actionSignOut"
+        android:icon="@drawable/icon_logout"
+        android:title="@string/action_sign_out">
+    </item>
+
+
+</menu>

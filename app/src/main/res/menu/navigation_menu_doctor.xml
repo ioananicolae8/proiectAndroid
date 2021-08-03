@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/actionHome"
+        android:icon="@drawable/icon_programarenoua"
+        android:title="Adaugă o programare nouă">
+    </item>
+
+    <item android:id="@+id/actionProgramari"
+        android:icon="@drawable/icon_notite"
+        android:title="Programări">
+    </item>
+
+    <item android:id="@+id/actionDespreDiabet"
+        android:icon="@drawable/icon_despre_diabet"
+        android:title="@string/action_despre_diabet">
+    </item>
+
+    <item android:id="@+id/actionSeteazaReminder"
+        android:icon="@drawable/icon_reminder"
+        android:title="@string/action_seteaza_reminder">
+    </item>
+
+    <item android:id="@+id/actionChat"
+        android:icon="@drawable/icon_chat"
+        android:title="@string/action_chat">
+    </item>
+
+    <item android:id="@+id/actionSignOut"
+        android:icon="@drawable/icon_logout"
+        android:title="@string/action_sign_out">
+    </item>
+
+</menu>
